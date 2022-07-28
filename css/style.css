@@ -137,12 +137,12 @@ textarea{
     max-height: 200px;
     max-width: 100%;
 }
-#boton-contacto{
+.boton-contacto{
     background-color: #185186;
     color: #fff;
     padding: 20px;
 }
-#boton-contacto:hover {
+.boton-contacto:hover {
 cursor: pointer;
 }
 
