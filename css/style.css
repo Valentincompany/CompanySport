@@ -237,6 +237,7 @@ cursor: pointer;
     background-position: center;
     font-family: "Anton", sans-serif;
     font-size: 20px;
+
 }
 .footer .grupo-1{
     display: grid;
@@ -245,12 +246,13 @@ cursor: pointer;
     justify-items: center;
 
 }
-
 .footer .nav-footer{
     margin-bottom: 40px;
-
 }
 
+.links:hover{
+    color:black;
+}
 .footer .grupo-1 .box li{
     width: 100%;
     height: 100%;
@@ -270,9 +272,11 @@ cursor: pointer;
     font-family: sans-serif;
     font-size: 25px;
 }
-i{
+a{
+    text-decoration: none;
     color: black;
 }
+
 .redes-sociales .bi{
     display: flex;
     flex-direction: column;
@@ -286,6 +290,12 @@ font-size: 2.0rem;
 cursor: pointer;
 
 }
+.bi-instagram:hover{
+color: #FA42DB;
+}
+.bi-whatsapp:hover{
+    color: #109D0B;
+}
 .footer .grupo-2{
     font-family: sans-serif;
     color: black;
@@ -294,7 +304,7 @@ cursor: pointer;
     text-align: center;
 }
 ul{
-    list-style-type: none;
+    list-style-type: none
 }
 /*media footer*/
 @media only screen and (max-width:768px){
