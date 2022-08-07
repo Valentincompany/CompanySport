@@ -181,10 +181,19 @@ cursor: pointer;
 .body-productos {
     background-color: rgb(245, 245, 245);
 }
-.card {
-    text-decoration: none;
-    margin: 0%;
-    text-decoration: none;
+.card{
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(245, 245, 245);
+    font-family: "grenze", cursive;
+}
+.btn{
+    background-color: black;
+    transition: all;
+}
+.btn:hover{
+    background-color: #185186;
 }
 .footer{
     width: 100%;
