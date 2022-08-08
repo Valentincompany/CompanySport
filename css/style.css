@@ -58,6 +58,7 @@
     height: 750px;
     max-height: 100%;
 }
+
 .conteiner-index  {
 display: grid;
 grid-template-columns:repeat(2,1fr);
@@ -72,6 +73,14 @@ grid-row-gap: 30px;
     margin-top: 20px;
     margin-bottom: 50px;   
 }
+.imagen-messi{
+    width: 600px;
+    height: 400px;
+}
+iframe{
+width: 600px;
+height: 400px;
+}
 
 /*contacto*/
 .formulario{
@@ -80,7 +89,7 @@ grid-row-gap: 30px;
     background-color: #B3B6B7;
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top:100px;
+    margin-top:50px;
     border-radius:7px;
     margin-bottom: 100px;
 }
@@ -196,7 +205,7 @@ cursor: pointer;
 }
 .btn:hover{
     height: 50px;
-    background-color: black;
+    background-color: #0D469E;
 }
 .footer{
     width: 100%;
@@ -278,9 +287,6 @@ ul{
 }
 /*media footer*/
 @media only screen and (max-width:768px){
-
-}
-@media only screen and (max-width:576px) {
     .icono{
         flex-direction: column;
         height: auto ;
@@ -290,6 +296,58 @@ ul{
     display: flex;
     flex-direction: column;
 }
+.imagen-messi{
+    width: 100%;
+
+}
+iframe{
+width: 100%;
+
+}
+/*locales*/
+.buenos-aires{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.titulos-locales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.map-locales{
+display: flex;
+flex-direction: column;
+}
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    /*media contacto*/
+    .body-contacto{
+        width: 100%;
+    }
+    .formulario{
+        width: 80%;
+    }
+}
+@media (max-width:768px) and (min-width:320) {
+    .icono{
+        flex-direction: column;
+        height: auto ;
+    }
+    /*index*/
+.conteiner-index{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+}
+
 /*locales*/
 .buenos-aires{
     display: flex;
@@ -318,3 +376,4 @@ flex-direction: column;
         width: 100%;
     }
 }
+
