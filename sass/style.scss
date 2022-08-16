@@ -1,5 +1,9 @@
-
+@mixin img-size($height,$width) {
+  height: $height;
+  width: $width;
+}
 $color-background:rgb(245, 245, 245);
+
 
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap");
@@ -44,11 +48,13 @@ $color-background:rgb(245, 245, 245);
   color: white;
   font-family: "Anton", sans-serif;
   font-size: 20px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .navbar-collapse {
   display: flex;
-  flex-grow: initial; }
+  flex-grow: initial; 
+}
 
 .imagen-cuotas {
   background-size: cover;
@@ -56,7 +62,8 @@ $color-background:rgb(245, 245, 245);
   max-width: 100%;
   width: 100%;
   height: 750px;
-  max-height: 100%; }
+  max-height: 100%; 
+}
 
 .conteiner-index {
   display: grid;
@@ -73,12 +80,11 @@ $color-background:rgb(245, 245, 245);
   margin-bottom: 50px; }
 
 .imagen-messi {
-  width: 600px;
-  height: 400px; }
+  @include img-size(400px, 600px);
+}
 
 iframe {
-  width: 600px;
-  height: 400px; }
+  @include img-size(400px, 600px); }
 
 /*contacto*/
 .formulario {
@@ -143,9 +149,8 @@ textarea {
   margin-top: 20px; }
 
 .respuestas {
-  font-family: "poppins" sans-serif;
-  font-size: 30px;
-  color: black;
+  @extend .preguntas;
+  font-family: "poppins", sans-serif;
   padding: 15px 10px;
   box-sizing: border-box;
   margin-top: 10px;
@@ -200,8 +205,7 @@ textarea {
   background-color: #0D469E; }
 
   .footer{
-    width: 100%;
-    height: 100%;
+    @include img-size(100%,100% );
     padding: 20px 20px;
     background-image: url("../imagenes/background/dirty-pattern-paint-room-block.jpg");
     background-size: cover;
@@ -218,8 +222,7 @@ textarea {
         margin-bottom: 40px;
     }
     .box li{
-        width: 100%;
-        height: 100%;
+      @include img-size(100%,100% );
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -278,41 +281,6 @@ ul{
 }
 
 /*media footer*/
-@media only screen and (max-width: 768px) {
-  .icono {
-    flex-direction: column;
-    height: auto; }
-  /*index*/
-  .conteiner-index {
-    display: flex;
-    flex-direction: column; }
-  .imagen-messi {
-    width: 100%; }
-  iframe {
-    width: 100%; }
-  /*locales*/
-  .buenos-aires {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  .titulos-locales {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .map-locales {
-    display: flex;
-    flex-direction: column; }
-  .footer .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px; }
-  /*media contacto*/
-  .body-contacto {
-    width: 100%; }
-  .formulario {
-    width: 80%; } }
-
 @media (max-width: 768px) and (min-width: 320) {
   .icono {
     flex-direction: column;
@@ -323,6 +291,10 @@ ul{
     flex-direction: column;
     margin: 0%;
     padding: 0%; }
+    .imagen-messi {
+      width: 100%; }
+    iframe {
+      width: 100%; }
   /*locales*/
   .buenos-aires {
     display: flex;
@@ -335,6 +307,7 @@ ul{
   .map-locales {
     display: flex;
     flex-direction: column; }
+    /*media footer*/
   .footer .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
