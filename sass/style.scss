@@ -2,9 +2,14 @@
   height: $height;
   width: $width;
 }
-$color-background:rgb(245, 245, 245);
-
-
+$styles: (
+fondo:#f5f5f5,
+negro: black,
+formulario: #B3B6B7,
+boton-hover:#0D469E,
+ig:#FA42DB,
+wsp:#109D0B,
+);
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
@@ -39,10 +44,12 @@ $color-background:rgb(245, 245, 245);
 
 /*index*/
 .body-index {
-    background-color: $color-background; }
+    background-color: map-get($styles, fondo); 
+  }
 
 .navbar {
-  background-color: black; }
+  background-color: map-get($styles, negro); 
+}
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
@@ -90,7 +97,7 @@ iframe {
 .formulario {
   width: 450px;
   margin: auto;
-  background-color: #B3B6B7;
+  background-color: map-get($styles, formulario);
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 50px;
@@ -135,7 +142,7 @@ textarea {
 
 /*ayuda*/
 .body-help {
-  background-color: $color-background;;
+  background-color: map-get($styles, fondo );
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0%; }
@@ -185,13 +192,13 @@ textarea {
 
 /*productos*/
 .body-productos {
-    background-color: $color-background; }
+    background-color: map-get($styles, fondo); }
 
 .card {
   border: none;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: $color-background;;
+  background-color: map-get($styles, fondo );
   font-family: "grenze", cursive; }
 
 .btn {
@@ -202,7 +209,7 @@ textarea {
 
 .btn:hover {
   height: 50px;
-  background-color: #0D469E; }
+  background-color: map-get($styles, boton-hover ) }
 
   .footer{
     @include img-size(100%,100% );
@@ -271,10 +278,10 @@ cursor: pointer;
 
 }
 .bi-instagram:hover{
-color: #FA42DB;
+color: map-get($styles, ig );
 }
 .bi-whatsapp:hover{
-    color: #109D0B;
+    color: map-get($styles, wsp );
 }
 ul{
     list-style-type: none
