@@ -41,7 +41,10 @@ wsp:#109D0B,
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
-
+.logo{
+  width: 85px;
+  height: 85px;
+}
 /*index*/
 .body-index {
     background-color: map-get($styles, fondo); 
