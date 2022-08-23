@@ -292,53 +292,49 @@ textarea {
   background-color: map-get($styles, boton-hover ) }
 
   .footer{
-    @include img-size(100%,100% );
+    width: 100%;
+    height: 100%;
     padding: 20px 20px;
     background-image: url("../imagenes/background/dirty-pattern-paint-room-block.jpg");
     background-size: cover;
     background-position: center;
     font-family: "Anton", sans-serif;
     font-size: 20px;
-    .grupo-1{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap:50px;
-        justify-items: center;  
-    }
-    .nav-footer{
-        margin-bottom: 40px;
-    }
-    .box li{
-      @include img-size(100%,100% );
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    
-    }
-    .box h3{
-        margin-bottom: 25px;
-        font-family: sans-serif;
-        font-size: 30px;
-    }
-    .box p{
-        color: black;
-        margin-bottom: 10px;
-        font-family: sans-serif;
-        font-size: 25px;
-    }    
-    .grupo-2{
-        font-family: sans-serif;
-        color: black;
-        font-size: 25px;
-        padding: 15px 10px;
-        text-align: center;
-    }
+
+}
+.footer .grupo-1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    justify-items: center;
+
+}
+.footer .nav-footer{
+    margin-bottom: 40px;
 }
 
 .links:hover{
     color:black;
 }
+.footer .grupo-1 .box li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 
+}
+.footer .grupo-1 .box h3{
+    margin-bottom: 25px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.footer .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
 a{
     text-decoration: none;
     color: black;
@@ -358,47 +354,110 @@ cursor: pointer;
 
 }
 .bi-instagram:hover{
-color: map-get($styles, ig );
+color: #FA42DB;
 }
 .bi-whatsapp:hover{
-    color: map-get($styles, wsp );
+    color: #109D0B;
+}
+.footer .grupo-2{
+    font-family: sans-serif;
+    color: black;
+    font-size: 25px;
+    padding: 15px 10px;
+    text-align: center;
 }
 ul{
     list-style-type: none
 }
 
-@media (max-width: 768px) and (min-width: 320) {
-  .icono {
-    flex-direction: column;
-    height: auto; }
+
+@media only screen and (max-width:768px){
+  .icono{
+      flex-direction: column;
+      height: auto ;
+  }
   /*index*/
-  .container-index {
-    display: flex;
-    flex-direction: column;
-    margin: 0%;
-    padding: 0%; }
-    .imagen-messi {
-      width: 100%; }
-    iframe {
-      width: 100%; }
-  /*locales*/
-  .buenos-aires {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .titulos-locales {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .map-locales {
-    display: flex;
-    flex-direction: column; }
-    /*media footer*/
-  .footer .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px; }
+.conteiner-index{
+  display: flex;
+  flex-direction: column;
+}
+.imagen-messi{
+  width: 100%;
+
+}
+iframe{
+width: 100%;
+
+}
+/*locales*/
+.buenos-aires{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.titulos-locales{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.map-locales{
+display: flex;
+flex-direction: column;
+}
+  .footer .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
   /*media contacto*/
-  form {
-    width: 100%; } }
+  .body-contacto{
+      width: 100%;
+  }
+  .formulario{
+      width: 80%;
+  }
+}
+@media (max-width:768px) and (min-width:320) {
+  .icono{
+      flex-direction: column;
+      height: auto ;
+  }
+  /*index*/
+.conteiner-index{
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*locales*/
+.buenos-aires{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.titulos-locales{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.map-locales{
+display: flex;
+flex-direction: column;
+}
+  .footer .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+  /*media contacto*/
+  form{
+      width: 100%;
+  }
+}
