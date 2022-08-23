@@ -71,20 +71,16 @@ wsp:#109D0B,
   margin: 0%;
   max-width: 100%;
   width: 100%;
-  height: 750px;
-  max-height: 100%; 
+
 }
-
-.container-index {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  justify-items: center;
-  grid-row-gap: 30px; }
-
+.camiseta-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
 .tittle-descuentos {
   font-family: "Anton", sans-serif;
-  font-size: 30px;
+  font-size: 1.8rem;
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 50px; }
@@ -377,17 +373,26 @@ ul{
       height: auto ;
   }
   /*index*/
-.conteiner-index{
+  .camiseta-container{
+flex-direction: column;
+align-items: center;
+  }
+
+.tittle-descuentos{
+  font-size: 1.2rem;
+}
+.imagen-index{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 .imagen-messi{
-  width: 100%;
+  height: 350px;
+  width: 700px;
 
 }
 iframe{
-width: 100%;
-
+  height: 350px;
+  width: 700px;
 }
 /*locales*/
 .buenos-aires{
@@ -420,17 +425,30 @@ flex-direction: column;
       width: 80%;
   }
 }
-@media (max-width:768px) and (min-width:320) {
+@media only screen and (max-width:320px) {
   .icono{
       flex-direction: column;
       height: auto ;
   }
   /*index*/
-.conteiner-index{
+  .camiseta-container{
+    flex-direction: column;
+    align-items: center;
+      }
+.tittle-descuentos{
+  font-size: 1.2rem;
+}
+.imagen-index{
   display: flex;
-  flex-direction: column;
-  margin: 0%;
-  padding: 0%;
+  justify-content: center;
+}
+.imagen-messi{
+  height: 250px;
+  width: 100%;
+}
+iframe{
+  height: 250px;
+  width: 300px;
 }
 
 /*locales*/
