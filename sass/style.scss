@@ -239,32 +239,22 @@ textarea {
 	right: initial;
 	left: -50px;
 }
-/*locales*/
-.body-locales {
-  background-image: url("../imagenes/background/SL_031721_41490_35.jpg");
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-  margin: 0%;
+/*ofertas*/
+.body-ofertas {
+  background-color: map-get($styles, fondo); 
   font-family: "Oswald", sans-serif;
   font-size: 25px;
   color: black; }
-
-.buenos-aires {
+.ofertas{
+  background-color: black;
+  color: white;
+  margin: auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  padding-top: 30px;
-  font-size: 50px; }
-
-.titulos-locales {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  justify-items: center;
-  grid-row-gap: 30px;
-  padding-bottom: 70px;
-  padding-top: 30px;
-  padding-left: 30px; }
+  align-items: center;
+  height: 70px;
+  margin-top: 20px;
+}
 
 /*productos*/
 .body-productos {
@@ -394,23 +384,8 @@ iframe{
   height: 350px;
   width: 700px;
 }
-/*locales*/
-.buenos-aires{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/*ofertas*/
 
-}
-.titulos-locales{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.map-locales{
-display: flex;
-flex-direction: column;
-}
   .footer .grupo-1{
       width: 90%;
       grid-template-columns: repeat(1,1fr);
@@ -451,22 +426,9 @@ iframe{
   width: 300px;
 }
 
-/*locales*/
-.buenos-aires{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/*ofertas*/
+.body-ofertas{
 
-}
-.titulos-locales{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.map-locales{
-display: flex;
-flex-direction: column;
 }
   .footer .grupo-1{
       width: 90%;
