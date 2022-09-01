@@ -259,7 +259,29 @@ textarea {
 /*productos*/
 .body-productos {
     background-color: map-get($styles, fondo); }
-
+.qatar{
+background: #fffbd5; 
+background: -webkit-linear-gradient(to left, #b20a2c, #fffbd5); 
+background: linear-gradient(to left, #b20a2c, #fffbd5); 
+height: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Oswald", sans-serif;
+color: black;
+}
+.destacados{
+background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 200px;
+width: 100%;
+font-family: "Oswald", sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
 .card {
   border: none;
   margin-top: 20px;
@@ -384,14 +406,7 @@ iframe{
   height: 350px;
   width: 700px;
 }
-/*ofertas*/
 
-  .footer .grupo-1{
-      width: 90%;
-      grid-template-columns: repeat(1,1fr);
-      grid-gap:30px;
-      padding: 35px 0px;
-  }
   /*media contacto*/
   .body-contacto{
       width: 100%;
@@ -426,16 +441,17 @@ iframe{
   width: 300px;
 }
 
-/*ofertas*/
-.body-ofertas{
-
+.footer .grupo-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-  .footer .grupo-1{
-      width: 90%;
-      grid-template-columns: repeat(1,1fr);
-      grid-gap:30px;
-      padding: 35px 0px;
-  }
+
+.redes-sociales{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   /*media contacto*/
   form{
       width: 100%;
