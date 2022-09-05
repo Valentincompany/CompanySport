@@ -239,37 +239,49 @@ textarea {
 	right: initial;
 	left: -50px;
 }
-/*locales*/
-.body-locales {
-  background-image: url("../imagenes/background/SL_031721_41490_35.jpg");
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-  margin: 0%;
+/*ofertas*/
+.body-ofertas {
+  background-color: map-get($styles, fondo); 
   font-family: "Oswald", sans-serif;
   font-size: 25px;
   color: black; }
-
-.buenos-aires {
+.ofertas{
+  background-color: black;
+  color: white;
+  margin: auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  padding-top: 30px;
-  font-size: 50px; }
-
-.titulos-locales {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  justify-items: center;
-  grid-row-gap: 30px;
-  padding-bottom: 70px;
-  padding-top: 30px;
-  padding-left: 30px; }
+  align-items: center;
+  height: 70px;
+  margin-top: 20px;
+}
 
 /*productos*/
 .body-productos {
     background-color: map-get($styles, fondo); }
-
+.qatar{
+background: #fffbd5; 
+background: -webkit-linear-gradient(to left, #b20a2c, #fffbd5); 
+background: linear-gradient(to left, #b20a2c, #fffbd5); 
+height: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Oswald", sans-serif;
+color: black;
+}
+.destacados{
+background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 200px;
+width: 100%;
+font-family: "Oswald", sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
 .card {
   border: none;
   margin-top: 20px;
@@ -394,29 +406,7 @@ iframe{
   height: 350px;
   width: 700px;
 }
-/*locales*/
-.buenos-aires{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 
-}
-.titulos-locales{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.map-locales{
-display: flex;
-flex-direction: column;
-}
-  .footer .grupo-1{
-      width: 90%;
-      grid-template-columns: repeat(1,1fr);
-      grid-gap:30px;
-      padding: 35px 0px;
-  }
   /*media contacto*/
   .body-contacto{
       width: 100%;
@@ -448,32 +438,23 @@ flex-direction: column;
 }
 iframe{
   height: 250px;
-  width: 300px;
+  width: 320px;
 }
-
-/*locales*/
-.buenos-aires{
+.nav-footer{
   display: flex;
-  flex-direction: row;
   justify-content: center;
-
+  align-items: center;
 }
-.titulos-locales{
+.footer .grupo-1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.redes-sociales{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-.map-locales{
-display: flex;
-flex-direction: column;
-}
-  .footer .grupo-1{
-      width: 90%;
-      grid-template-columns: repeat(1,1fr);
-      grid-gap:30px;
-      padding: 35px 0px;
-  }
   /*media contacto*/
   form{
       width: 100%;
