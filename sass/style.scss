@@ -438,23 +438,17 @@ iframe{
 }
 iframe{
   height: 250px;
-  width: 300px;
+  width: 320px;
 }
-
+.nav-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer .grupo-1{
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.footer .grupo-1 .box h3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer .grupo-1 .box p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .redes-sociales{
   display: flex;
