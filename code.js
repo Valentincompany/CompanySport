@@ -1,4 +1,4 @@
-/*
+
 //variables
 
 let usuario
@@ -10,34 +10,36 @@ const camisetas=14000;
 const pelota=6500;
 const shorts=4000;
 const zapatillas=10000;
+//funcion
+
 
 //bienvenida
 usuario=prompt("ingresa tu usuario");
 alert("Bienvenido "+usuario+"!")
 
-menu = prompt("Quire saber el precio de un producto? si/no");
-prompt("que producto desea conocer?(ingrese el numero del producto) 1-buzos  2-camisetas 3-pelota  4-shorts  5-zapatillas)")
-while(menu=="si"){
-    prompt("que producto desea conocer?(ingrese el numero del producto) 1-buzos  2-camisetas 3-pelota  4-shorts  5-zapatillas")    
-    switch(productos){
+menu = prompt("Quire saber el precio de un producto? si/no"); 
+while(menu!="no"){ 
+    menu=prompt("que producto desea conocer?(ingrese el numero del producto) \n1-Buzos \n2-Camisetas \n3-Pelota \n4-Shorts \n5-Zapatillas")
+    switch(menu){
     case "1":
-    prompt("Los Buzos cuestan $"+buzos);
+    alert("Los Buzos cuestan $"+buzos);
     break;
     case "2":
-    prompt("Las Camisetas cuestan $"+camisetas);
+    alert("Las Camisetas cuestan $"+camisetas);
     break;
     case "3":
-    prompt("La Pelota cuesta $"+pelota);
+    alert("La Pelota cuesta $"+pelota);
     break;
     case "4":
-    prompt("Los Shorts cuestan $"+shorts);
+    alert("Los Shorts cuestan $"+shorts);
     break;
     case "5":
-    prompt("Las zapatillas cuestan $"+zapatillas);
+    alert("Las zapatillas cuestan $"+zapatillas);
     break;
 }
+menu = prompt("Quire saber el precio de otro producto? si/no"); 
 }
 
-*/ 
+
 
 
