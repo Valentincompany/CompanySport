@@ -12,10 +12,13 @@ const camisetas=14000;
 const pelota=6500;
 const shorts=4000;
 const zapatillas=10000;
-
+//funcion
+function login(){
+    let usuario=prompt("ingrese el nombre de usuario")
+    alert("Bienvenido " + usuario+"!")
+    }
 //bienvenida
-usuario=prompt("ingresa tu usuario");
-alert("Bienvenido "+usuario+"!")
+login();
 
 menu = prompt("Quire saber el precio de un producto? si/no"); 
 while(menu!="no"){ 
