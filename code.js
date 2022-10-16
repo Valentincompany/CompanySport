@@ -36,7 +36,6 @@ function login(){
 //bienvenida
 login();
 
-//busqueda del producto
 menu=prompt("Desea comprar algun producto(si/no)")
 while(menu!="si"&& menu!="no"){
     alert("porfavor ingrese si o no")
@@ -49,8 +48,9 @@ alert(todoslosProductos.join(" - "))
 }else if (menu=="no"){
     alert("Gracias por visitar nuestro sitio, hasta pronto!!")
 }
+//agregando productos al carrito
 while(menu!="no"){
-    let producto =prompt("agrega un producto al carrito")
+    let producto =prompt("agrega un producto al carrito(escribe el nombre del producto que quieras)")
     let precio = 0
 
 if (producto == "buzos" || producto =="camisetas" || producto =="pelota" || producto =="shorts" || producto =="zapatillas"){
@@ -74,7 +74,6 @@ if (producto == "buzos" || producto =="camisetas" || producto =="pelota" || prod
         break;
     }
     let unidades = parseInt(prompt("cuantas unidades quiere llevar?"))
-
     carrito.push({producto, unidades, precio})
     console.log(carrito)
 }else{
