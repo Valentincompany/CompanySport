@@ -88,3 +88,6 @@ while(menu ==="no"){
     break;
 }
 }
+
+//evento al dar click en comprar
+
