@@ -1,16 +1,35 @@
-let contenedor = document.getElementById("misprods");
+let contenedor = document.getElementById("contenidoCarrito");
 
 function renderizadoProds(){
     for (const producto of productos){
         contenedor.innerHTML += `
-        <div class="card">
-        <img src="../imagenes/d88ae2138faf49be8f74aeca012c62eb_9366 (1).webp" class="card-img-top" alt="...">
+        <div class="card" style="width: 18rem;">
+        <img src=${producto.img} class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Camiseta de Argentina</h5>
-          <p class="card-text"></p>
-          <a href="#" class="btn btn-primary">Comprar</a>
+          <h5 class="card-title">${producto.nombre}</h5>
+          <p class=>${producto.precio}</p>
+          <button class="btn btn-primary">Comprar</button>
         </div>
       </div>
         `
     }
 }
+renderizadoProds();
+
+let contenedorDest = document.getElementById("contenidoDestacados");
+
+function renderizarDest(){
+    for (const destacado of destacados){
+        contenedorDest.innerHTML += `
+        <div class="card" style="width: 18rem;">
+        <img src=${destacado.img} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${destacado.nombre}</h5>
+          <p class=>${destacado.precio}</p>
+          <button class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+        `;
+    }
+}
+renderizarDest();
