@@ -289,6 +289,23 @@ textarea {
   padding-top: 20px;
   color: white;
 }
+/*eliminar productos*/
+.eliminar-producto{
+cursor: pointer;
+}
+
+/*contador de carrito*/
+.cantidad-carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
 
 .body-productos {
   background-color: #f5f5f5; }
