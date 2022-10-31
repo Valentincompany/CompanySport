@@ -61,7 +61,7 @@ const destacados = [
         id:9,
         nombre:"Camiseta de Argentina",
         precio:5800,
-        img:"../imagenes/nueva camiseta arg.jpg",
+        img:"../imagenes/nuevacamiseta_arg.jpg",
         cantidad:1,
     },
     {
@@ -82,14 +82,14 @@ const destacados = [
         id:12,
         nombre:"Buzo Adidas",
         precio:12000,
-        img:"../imagenes/buzo adidas.webp",
+        img:"../imagenes/buzo-negro-adidas.webp",
         cantidad:1,
     },
     {
         id:13,
         nombre:"Buzo Adidas",
         precio:10000,
-        img:"../imagenes/descarga (1).jpg",
+        img:"../imagenes/buzo-celeste.jpg",
         cantidad:1,
     },
     {
@@ -110,7 +110,7 @@ const destacados = [
         id:16,
         nombre:"Buzo Adidas",
         precio:10900,
-        img:"../imagenes/images(1).jpg",
+        img:"../imagenes/buzoNegro.jpg",
         cantidad:1,
     },
     {
@@ -124,14 +124,14 @@ const destacados = [
         id:18,
         nombre:"Camiseta Real Madrid",
         precio:12000,
-        img:"../imagenes/real madrid.webp",
+        img:"../imagenes/real-madrid.webp",
         cantidad:1,
     },
     {
         id:19,
         nombre:"Remera Adidas",
         precio:18000,
-        img:"../imagenes/remera adidas.jpg",
+        img:"../imagenes/remera_adidas.jpg",
         cantidad:1,
     },
     {
