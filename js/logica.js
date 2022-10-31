@@ -3,7 +3,7 @@ const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container")
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 function renderizadoProds(){
     for (const producto of productos){
@@ -30,7 +30,7 @@ renderizadoProds();
 
 function agregarAlCarrito(productoComprado){
   carrito.push(productoComprado)
-  console.table(carrito);
+  saveLocal();
 }
 
 let contenedorDest = document.getElementById("contenidoDestacados");
@@ -59,8 +59,17 @@ renderizarDest();
 
 function agregarAlCarrito(productoComprado){
   carrito.push(productoComprado);
-  console.table(carrito);
+  saveLocal();
 }
+
+
+//set item
+const saveLocal = ()=> {
+localStorage.setItem("carrito", JSON.stringify (carrito));
+
+};
+//get item
+
 
 
 
