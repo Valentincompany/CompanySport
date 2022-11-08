@@ -73,7 +73,7 @@ const ofertas = [
         id:11,
         nombre:"Buzo Dame 8 Innovation",
         precio:7000,
-        img:"../imagenes/308d1c742fdb4344a387ad9201306d61_9366.webp",
+        img:"../imagenes/f84eb5f995dd4b60a60cad7f0177fa80_9366.webp",
         cantidad:1,
     },
     {

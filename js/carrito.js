@@ -26,7 +26,7 @@ const pintarCarrito = () => {
     <img src="${producto.img}">
     <h3>${producto.nombre}</h3>
     <p>$${producto.precio}</p>
-    <span class="eliminar-producto"> ❌ </span> 
+    <span class="eliminar-producto"> 🗑️ </span> 
     `;
     modalContainer.append(carritoContent);
 
