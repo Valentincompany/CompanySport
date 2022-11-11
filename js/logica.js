@@ -15,7 +15,7 @@ function renderizadoProds(){
         <img src=${producto.img} class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${producto.nombre}</h5>
-          <p class=>U$D ${(producto.precio/dolarCompra).toFixed(2)}</p>
+          <p class=>$${producto.precio}</p>
           <button id="btn${producto.id}" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -44,7 +44,7 @@ function renderizarDest(){
         <img src=${destacado.img} class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${destacado.nombre}</h5>
-          <p class=>${(destacado.precio/dolarCompra).toFixed(2)}</p>
+          <p class=>$${destacado.precio}</p>
           <button id="btn${destacado.id}"class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -63,22 +63,6 @@ function agregarAlCarrito(productoComprado){
   carrito.push(productoComprado);
   saveLocal();
 }
-
-//Obtener valor del dolar
-
-  const URLDOLAR="https://api.bluelytics.com.ar/v2/latest";
-  fetch(URLDOLAR)
-      .then( respuesta => respuesta.json())
-      .then( cotizaciones => {
-          const dolarBlue = cotizaciones.blue;
-          console.log(dolarBlue);
-          dolarCompra=dolarBlue.value_buy;
-      })
-
-
-
-
-
 
 //set item
 const saveLocal = ()=> {
