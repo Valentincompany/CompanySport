@@ -56,6 +56,7 @@ const productos = [
         cantidad:1,
     }
 ];
+
 const destacados = [
     {
         id:9,
