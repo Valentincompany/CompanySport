@@ -289,6 +289,15 @@ textarea {
   padding-top: 20px;
   color: white;
 }
+.modal-footer-button{
+  background-color: #05c2e3;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.modal-footer-button {
+  cursor: pointer;
+}
 /*eliminar productos*/
 .eliminar-producto{
 cursor: pointer;
