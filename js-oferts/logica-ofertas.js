@@ -2,9 +2,9 @@ let contenedor = document.getElementById("contenidoCarrito");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container")
 const cantidadCarrito = document.getElementById("cantidadCarrito");
-
+//get item
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
+//renderizar cards
 function renderizadoOferts(){
     for (const oferta of ofertas){
         contenedor.innerHTML += `
@@ -19,7 +19,7 @@ function renderizadoOferts(){
         `
     }
     
-  //events
+  //recorrer los productos
     ofertas.forEach(oferta => {
       document.getElementById(`btn${oferta.id}`).addEventListener("click",function(){
         agregarAlCarrito(oferta);
@@ -30,6 +30,7 @@ renderizadoOferts();
 
 function agregarAlCarrito(productoComprado){
   carrito.push(productoComprado)
+    //invoco la funcion saveLocal 
   saveLocal();
 }
 
@@ -44,4 +45,4 @@ const saveLocal = ()=> {
 localStorage.setItem("carrito", JSON.stringify (carrito));
 
 };
-//get item
+

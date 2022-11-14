@@ -4,10 +4,10 @@ let dolarCompra;
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container")
 const cantidadCarrito = document.getElementById("cantidadCarrito");
-
+//get item
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-
+//renderizar cards
 function renderizadoProds(){
     for (const producto of productos){
         contenedor.innerHTML += `
@@ -22,7 +22,7 @@ function renderizadoProds(){
         `
     }
 
-  //events
+  //recorrer los productos
     productos.forEach(producto => {
       document.getElementById(`btn${producto.id}`).addEventListener("click",function(){
         agregarAlCarrito(producto);
@@ -30,13 +30,16 @@ function renderizadoProds(){
     });
 }
 renderizadoProds();
+
 function agregarAlCarrito(productoComprado){
   carrito.push(productoComprado)
+  //invoco la funcion saveLocal 
   saveLocal();
 }
 
 let contenedorDest = document.getElementById("contenidoDestacados");
 
+//renderizar cards
 function renderizarDest(){
     for (const destacado of destacados){
         contenedorDest.innerHTML += `
@@ -50,7 +53,7 @@ function renderizarDest(){
       </div>
         `;
     }
-      //events
+  //recorrer los productos
       destacados.forEach(destacado => {
         document.getElementById(`btn${destacado.id}`).addEventListener("click",function(){
           agregarAlCarrito(destacado);
@@ -61,6 +64,7 @@ renderizarDest();
 
 function agregarAlCarrito(productoComprado){
   carrito.push(productoComprado);
+  //invoco la funcion saveLocal
   saveLocal();
 }
 
@@ -69,7 +73,7 @@ const saveLocal = ()=> {
 localStorage.setItem("carrito", JSON.stringify (carrito));
 
 };
-//get item
+
 
 
 

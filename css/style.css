@@ -232,6 +232,9 @@ textarea {
 
 /*productos*/
 /*modal content*/
+.ver-carrito {
+  cursor: pointer;
+}
 .modal-container {
   width: 80%;
   margin: 0 10%;
@@ -421,6 +424,8 @@ a {
 ul {
   list-style-type: none; }
 
+  
+
 @media only screen and (max-width: 768px) {
   .icono {
     flex-direction: column;
@@ -444,7 +449,23 @@ ul {
   .body-contacto {
     width: 100%; }
   .formulario {
-    width: 80%; } }
+    width: 80%; } 
+  /*modal*/
+  .modal-container {
+    width: 100%;
+    margin: 0;
+    min-height: 88vh;
+  }
+  .modal-container > .modal-content {
+    justify-content: space-between;
+    width: 100%;
+    margin: 2px;
+  }
+  .modal-container > div > img {
+    height: 80px;
+    width: 80px;
+  }
+}
 
 @media only screen and (max-width: 320px) {
   .icono {
@@ -479,4 +500,20 @@ ul {
     align-items: center; }
   /*media contacto*/
   form {
-    width: 100%; } }
+    width: 100%; } 
+    /*modal*/
+    .modal-container {
+      width: 100%;
+      margin: 0;
+      min-height: 88vh;
+    }
+    .modal-container > .modal-content {
+      justify-content: space-between;
+      width: 100%;
+      margin: 2px;
+    }
+    .modal-container > div > img {
+      height: 80px;
+      width: 80px;
+    }
+  }
