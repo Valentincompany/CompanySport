@@ -17,6 +17,6 @@ $form.addEventListener("submit",handleSubmit)
     })
     if (response.ok){
         this.reset()
-        alert("gracias por contactarnos, pronto le llegara su respuesta")
+        swal ( "Gracias por Contactarnos" ,  "Pronto recibira un mail con una respuesta" ,  "success" )
     }
 }   
